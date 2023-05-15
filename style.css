@@ -8,12 +8,15 @@ body{
 }
 
 .name{
+    grid-area: name;
     color: #feb914;
+    /* color: #54b3ea; */
     font-size: 150px;
     /* -webkit-text-stroke: 2px gray; */
-    text-shadow: 3px 0 gray, -3px 0 gray, 0 3px gray, 0 -3px gray,
-               2px 2px gray, -2px -2px gray, 2px -2px gray, -2px 2px gray;
+    text-shadow: 3px 3px black;
     font-family: 'Lobster', cursive;
+    margin-bottom: 0px;
+    margin-top: 0;
 }
 button{
     width: 200px;
@@ -21,14 +24,83 @@ button{
     border-radius: 0;
     background-color: #feb914;
     font-family: 'Press Start 2P', cursive;
+    border: none;
+    box-shadow: 3px 3px 1px 1px black; 
 }
 .buttons{
     text-align: center;
     display: flex;
     justify-content: space-around;
+    padding: 20px;
+}
+.home{
+display: grid;
+grid-template-areas: 
+'name image'
+'subtitle image';
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+padding: 20px;
 }
 .home, .about, .projects, .contact {
     height: 100vh;
     font-family: 'Press Start 2P', cursive;
     font-size: 40px;
+    padding: 20px;
   }
+
+  #projects{
+    height: 325vh;
+  }
+
+  .subtitle{
+    grid-area: subtitle;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  img {
+    margin-top: 0px;
+    grid-area: image;
+    rotate: -5deg;
+    height: 450px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+  .quote{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .about{
+    background-color: #54b3ea; ;
+  }
+  #projects{
+    background-color: #fcf0d9;
+  }
+  .contact{
+    background-color: #4a4d4f;
+  }
+
+h1{
+    font-family: 'Lobster', cursive;
+
+}
+.project-container > p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+   width: 500px;
+   display: inline-block;
+   margin-top: 0;
+ 
+}
+h4{
+    margin-bottom: 0px;
+}
+video{
+    margin-top: 30px;
+    margin-right: 0px;
+}
