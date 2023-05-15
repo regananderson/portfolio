@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -22,18 +22,75 @@
         <button onclick="scrollToSection('projects')">Projects</button>
         <button onclick="scrollToSection('contact')">Contact</button>
     </div>
-
+    <div class="quote">
+        <p>
+            "You can't live life to the fullest without taking risks" - Anonymous
+        </p>
+    </div>
     <div class="home">
         <h1 class="name">Regan <br> Anderson</h1>
+        <h3 class="subtitle"> Web Developer</h3>
+        <img src="/photo2.png" alt="photo">
     </div>
 
     <div class="about" id="about">
         <h1>About</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Maiores, excepturi quod? Vitae harum quam necessitatibus 
+            eius aperiam tempore consequatur dolore amet possimus! 
+            Odio ipsum placeat repellendus culpa error dolor amet.
+        </p>
         <button onclick="scrollToSection('home')">Back To Top^</button>
     </div>
 
     <div class="projects" id="projects">
         <h1>Projects</h1>
+        <div class="project-container">
+            <h4>Theme Park Tracker</h4>
+            <p>Theme Park Tracker is a CRUD web application that allows 
+                users to view and maintain a list of theme parks as
+                 well as comment on each individual park. <br><br>
+                 Technology used: Javascript, CSS, HTML, Node.js, Express, MongoDB, Mongoose
+            </p>
+           
+            <video width="700" controls>
+                <source src="TPT.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            
+            <p>
+                <a href="https://github.com/regananderson/Theme-Park-Tracker">Github repo</a> |
+                <a href="https://theme-park-tracker.herokuapp.com/">Try it out!</a>
+            </p>
+            <br>
+            <h4>ONIT</h4>
+            <p>To-Do list app made with React.js that allows user to create tasks, subtasks, mark them completed, important and more. 
+                The app also incorporates a quote API that provides an everchanging inspirational quote.<br><br>
+            Technology used: React.js, Mongoose, MongoDB, CSS, HTML
+        </p>
+            <p>
+                <a href="https://github.com/regananderson/onit">Github repo</a> |
+                <a href="https://onit-app.netlify.app">Try it out!</a>
+            </p>
+            <br>
+            <h4>My Investment Wallet</h4>
+            <p>My Investment Wallet is a tool to track the value of investments across various asset classes.
+                <br><br>
+            Technology used: Python, Django, Javascript, CSS, HTML, SQL</p>
+            <p>
+                <a href="https://github.com/regananderson/myinvestmentwallet">Github repo</a> |
+                <a href="https://myinvestmentwallet.herokuapp.com/accounts/login/?next=/">Try it out!</a>
+            </p>
+            <br>
+            <h4>Marvel Trivia</h4>
+            <p>A web trivia game using the Marvel API to display character descriptions. <br><br>
+            Technology used: HTML, CSS, JavaScript (jQuery)</p>
+            <p>
+                <a href="https://github.com/regananderson/Marvel-Project-1">Github repo</a> |
+                <a href="https://mellow-cannoli-8358c6.netlify.app/">Try it out!</a>
+            </p>
+         </div>
         <button onclick="scrollToSection('home')">Back To Top^</button>
     </div>
 
