@@ -50,7 +50,7 @@ padding: 20px;
   }
 
   #projects{
-    height: 325vh;
+    height: 340vh;
   }
 
   .subtitle{
@@ -89,18 +89,35 @@ h1{
     font-family: 'Lobster', cursive;
 
 }
-.project-container > p{
+.project-container > p, .p1, .p2{
     font-family: 'Titillium Web', sans-serif;
-    font-size: 30px;
+    font-size: 27px;
    width: 500px;
    display: inline-block;
    margin-top: 0;
+   height: 100px;
  
 }
 h4{
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 video{
     margin-top: 30px;
     margin-right: 0px;
+    margin-left: 50px;
+}
+.container1{
+  display: grid;
+  grid-template-areas: 
+  'p1 vid'
+  'p2 vid';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 500px;
+}
+.p1{
+  grid-area: p1;
+}
+.p2{
+  grid-area: p2;
 }
