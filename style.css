@@ -59,7 +59,7 @@ padding: 20px;
     font-size: 30px;
     margin-top: 0px;
   }
-  img {
+  .main-img {
     margin-top: 0px;
     grid-area: image;
     rotate: -5deg;
@@ -120,4 +120,9 @@ video{
 }
 .p2{
   grid-area: p2;
+}
+
+.about > p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
 }
