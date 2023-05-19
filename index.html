@@ -22,15 +22,16 @@
         <button onclick="scrollToSection('projects')">Projects</button>
         <button onclick="scrollToSection('contact')">Contact</button>
     </div>
-    <div class="quote">
+    <!-- <div class="quote">
         <p>
             "You can't live life to the fullest without taking risks" - Anonymous
         </p>
-    </div>
+    </div> -->
     <div class="home">
-        <h1 class="name">Regan <br> Anderson</h1>
+        <img src="emoji.png" alt="photo" class="main-img">
+        <h1 class="name">Regan Anderson</h1>
         <h3 class="subtitle"> Web Developer</h3>
-        <img src="/photo2.png" alt="photo" class="main-img">
+        <h5 class="quote">"You can't live life to the fullest without taking risks" - Anonymous</h5>
     </div>
 
     <div class="about" id="about">
@@ -69,6 +70,8 @@
                     <a href="https://theme-park-tracker.herokuapp.com/">Try it out!</a>
                 </p>
             </div>
+            <br>
+            <br>
             <h4>ONIT</h4>
             <div class="container1">
             <p class="p1">To-Do list app made with React.js that allows user to create tasks, subtasks, mark them completed, important and more. 
@@ -84,7 +87,8 @@
                 <a href="https://onit-app.netlify.app">Try it out!</a>
             </p>
         </div>
-         
+        <br>
+        <br>
             <h4>My Investment Wallet</h4>
             <div class="container1">
             <p class="p1">My Investment Wallet is a tool to track the value of investments across various asset classes.
@@ -101,6 +105,8 @@
                 <a href="https://myinvestmentwallet.herokuapp.com/accounts/login/?next=/">Try it out!</a>
             </p>
             </div>
+            <br>
+            <br>
             <h4>Marvel Trivia</h4>
             <div class="container1">
             <p class="p1">A web trivia game using the Marvel API to display character descriptions. <br><br>
@@ -109,16 +115,35 @@
             <p class="p2">
                 <a href="https://github.com/regananderson/Marvel-Project-1">Github repo</a> 
 
-
                 <!-- <a href="https://mellow-cannoli-8358c6.netlify.app/">Try it out!</a> -->
             </p>
             </div>
          </div>
         <button onclick="scrollToSection('home')">Back To Top^</button>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="contact" id="contact">
         <h1>Contact Me</h1>
+        <form
+        action="https://formspree.io/f/xgebqbdd"
+        method="POST"
+        >
+        <label>
+          Email:
+          <input type="email" name="email">
+        </label>
+        <br>
+        <label>
+          Message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+      <br>
         <button onclick="scrollToSection('home')">Back To Top^</button>
     </div>
 
